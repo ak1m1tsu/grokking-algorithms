@@ -1,0 +1,28 @@
+run:
+  concurrency: 4
+  tests: false
+
+output:
+  sort-result: true
+
+linters-settings:
+  gci:
+    sections:
+      - standard
+      - default
+      - blank
+      - dot
+    custom-order: true
+
+linters:
+  disable-all: true
+  enable:
+    - errcheck
+    - gosimple
+    - govet
+    - unused
+    - gci
+    - gocritic
+    - gocyclo
+    - gofmt
+    - goimports
